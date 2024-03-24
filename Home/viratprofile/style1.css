@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background:rgba(0,0,0,0.7)url("viratback.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.profile-container {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
+
+.profile-content h1,h2 {
+    display: inline-block;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.profile-info p {
+    color: white;
+}
+/*videos*/
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video {
+    width: 100%;
+    max-width: 400px; /* Adjust maximum width as needed */
+    margin: 0 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.video iframe {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+}
+
+.caption {
+    text-align: left;
+    color: white; /* Caption text color */
+    margin-top: 10px;
+}
+/*gallery*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust the minimum width of each image */
+    gap: 10px;
+    padding: 10px;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image:hover .overlay {
+    opacity: 1;
+}
+
+.view-btn,
+.download-btn {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-btn:hover,
+.download-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+/* Define a class for small buttons */
+.small-button {
+    padding: 5px; /* Adjust padding to make the buttons smaller */
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    /* Stack buttons vertically */
+    .view-btn,
+    .download-btn {
+        display: block;
+        padding: 5px; /* Reduce padding for smaller screens */
+        font-size: 12px; /* Reduce font size for smaller screens */
+        margin-bottom: 5px; /* Add margin between buttons */
+    }
+}
+
+
