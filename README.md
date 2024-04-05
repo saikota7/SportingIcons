@@ -1,4 +1,4 @@
-![home](https://github.com/saikota7/SportingIcons/assets/96785985/5f19d0b1-6c9e-4b13-8333-88d90e871d6e)# Sporting Icon
+# Sporting Icon
 
 Welcome to Sporting Icon! This is a web page where you can explore profiles of cricket and football players. Each player has a card showcasing their profile, highlights of their best games in videos, and downloadable wallpapers.
 
